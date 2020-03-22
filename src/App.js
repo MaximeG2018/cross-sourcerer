@@ -1,12 +1,12 @@
 import React from "react";
 import "./index.css";
 
-import Header from "./component/header"
-import Overview from "./component/overview"
-import Language from "./component/language"
-import Technologie from "./component/technologie"
-import FunFact from "./component/funfact"
-import Repository from "./component/repository"
+import Header from "./platform/web/component/header"
+import Overview from "./platform/web/component/overview"
+import Language from "./platform/web/component/language"
+import Technologie from "./platform/web/component/technologie"
+import FunFact from "./platform/web/component/funfact"
+import Repository from "./platform/web/component/repository"
 
 function App() {
 
