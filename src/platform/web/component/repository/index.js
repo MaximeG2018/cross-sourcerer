@@ -14,6 +14,8 @@ function Repository() {
   if (loading) return null;
   if (error) return `Error! ${error}`;
 
+  console.log(data.user)
+
   return (
     <div>
       <div> Repositories </div>

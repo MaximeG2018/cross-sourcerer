@@ -35,6 +35,10 @@ query ($login: String!){
             color
           }
         }
+      primaryLanguage {
+         name
+         color
+       }
       }
     }
    }
