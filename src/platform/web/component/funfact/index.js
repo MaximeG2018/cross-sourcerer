@@ -7,7 +7,7 @@ const { REACT_APP_LOGIN } = process.env
 
 function FunFact() {
 
-  const { loading, error, data} = useQuery(GET_USER_FUNFACTS, {
+  const { loading, error } = useQuery(GET_USER_FUNFACTS, {
     variables: { login: REACT_APP_LOGIN }
   });
 

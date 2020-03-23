@@ -15,8 +15,23 @@ query ($login: String!) {
     }
     repositories(first:100) {
       totalCount
+      nodes {
+        defaultBranchRef {
+          target {
+            ... on Commit {
+              history {
+                totalCount
+                nodes {
+                  additions
+                  deletions
+                }
+              }
+            }
+          }
+        }
+      }
+    }
    }
-  }
  }
 
 `;

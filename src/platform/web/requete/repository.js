@@ -5,11 +5,13 @@ const GET_USER_REPOSITORIES = gql`
 
 query ($login: String!){
    user(login: $login){
-    repositories(first:100) {
+    repositories(first:3) {
       totalCount
       nodes {
         name
         nameWithOwner
+        description
+        updatedAt
         assignableUsers(first:5) {
           totalCount
         }
@@ -17,6 +19,7 @@ query ($login: String!){
             totalCount
             nodes {
               login
+              avatarUrl
             }
           }
         defaultBranchRef {

@@ -7,7 +7,7 @@ const { REACT_APP_LOGIN } = process.env
 
 function Overview() {
 
-  const { loading, error, data} = useQuery(GET_USER_OVERVIEW, {
+  const { loading, error } = useQuery(GET_USER_OVERVIEW, {
     variables: { login: REACT_APP_LOGIN }
   });
 
